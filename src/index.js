@@ -62,12 +62,10 @@ function validAnagram(str1, str2) {
   let arr1 = str1.toLowerCase().split("");
   for (let val of arr1) {
     obj1[val] = (obj1[val] || 0) + 1;
-    console.log(obj1);
   }
   let arr2 = str2.toLowerCase().split("");
   for (let val of arr2) {
     obj2[val] = (obj2[val] || 0) + 1;
-    console.log(obj2);
   }
   for (let key in obj1) {
     if (obj2[key] !== obj1[key]) {
