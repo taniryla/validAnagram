@@ -72,6 +72,8 @@ function validAnagram(str1, str2) {
   for (let key in obj1) {
     if (obj2[key] !== obj1[key]) {
       return false;
+    } else {
+      obj1[key] -= 1;
     }
   }
   return true;
