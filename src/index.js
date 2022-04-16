@@ -57,12 +57,19 @@ validAnagram("anagram", "nagaram"); // true
 
 function validAnagram(str1, str2) {
   let obj1 = {};
-  // obj2 = {};
+  let obj2 = {};
   let arr1 = str1.toLowerCase().split("");
   if (typeof arr1 === "string") {
     for (let val of arr1) {
-      obj1[val] = (obj1[value] || 0) + 1;
+      obj1[val] = (obj1[val] || 0) + 1;
       console.log(obj1);
+    }
+  }
+  let arr2 = str2.toLowerCase().split("");
+  if (typeof arr2 === "string") {
+    for (let val of arr2) {
+      obj2[val] = (obj2[val] || 0) + 1;
+      console.log(obj2);
     }
   }
 }
