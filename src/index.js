@@ -60,8 +60,8 @@ function validAnagram(str1, str2) {
   // obj2 = {};
   let arr1 = str1.toLowerCase().split("");
   if (typeof arr1 === "string") {
-    for (let i of arr1) {
-      obj1[arr1[i]];
+    for (let val of arr1) {
+      obj1[val] = (obj1[value] || 0) + 1;
       console.log(obj1);
     }
   }
